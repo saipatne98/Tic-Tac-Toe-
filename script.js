@@ -31,11 +31,8 @@ boxes.forEach((box) => {
         }
         box.disabled = true;
         count++;
-
-        let isWinner=checkWinner();
-        if(count === 9 && !isWinner ){
-            gameDraw();
-        }
+        
+        checkWinner();
     })
 })
 
@@ -76,12 +73,6 @@ const resetGame = () => {
     }
     winnerMsg.classList.add("hide");
 
-}
-
-const gameDraw=()=>{
-    winnerMsg.innerText="Oh hoh ! Game Draw ,Click on Play New Game to Play";
-    winnerMsg.classList.remove("hide");
-    
 }
 
 resetBtn.addEventListener("click", resetGame);
