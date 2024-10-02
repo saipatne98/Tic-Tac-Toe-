@@ -9,25 +9,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center
-
 }
 
 .main {
     display: flex;
     justify-content: center;
-
-
-
-
 }
 
 .box {
     height: 2.5rem;
     width: 2.5rem;
+    font-size: larger;
     font-weight: 800;
+    color: #d71c15;
     background-color: #f19368;
     z-index: 5;
+}
 
+.box:hover {
+    box-shadow: 2px 2px 15px 5px rgb(236, 86, 86) inset;
 }
 
 .boxes {
@@ -38,7 +38,6 @@ body {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 2rem;
-
 }
 
 .game {
@@ -52,7 +51,12 @@ body {
     border-radius: 15px;
 }
 
-.newBtn{
+.resetBtn:hover {
+    box-shadow: 2px 2px 15px 2px black;
+
+}
+
+.newBtn {
     background-color: #3A86FF;
     padding: 8px;
     border: none;
@@ -66,7 +70,7 @@ body {
     font-size: 30px;
     flex-direction: column;
     height: 20vh;
-    
+
 }
 
 .hide {
